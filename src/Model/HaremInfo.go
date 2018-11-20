@@ -16,10 +16,10 @@ type HaremInfo struct {
 	NextShopRefreshTime time.Time
 
 	// 商店刷新次数
-	ShopRefreshNum int32
+	ShopRefreshNum int
 }
 
 // 创建新的后宫对象
-func NewHaremInfo() *HaremInfo{
+func NewHaremInfo() *HaremInfo {
 	return &HaremInfo{}
 }
