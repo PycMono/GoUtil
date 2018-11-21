@@ -1,10 +1,14 @@
 package DBTool
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestConn(t *testing.T) {
-	fmt.Println(fmt.Sprintf("TestConn",GetDB()))
+	tempList := make([]string, 0, 10)
+	tempList = append(tempList, "1")
+	tempList = append(tempList, "2")
+	fmt.Println(tempList)
+	fmt.Println(fmt.Sprintf("TestConn", GetDB()))
 }
