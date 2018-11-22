@@ -122,15 +122,44 @@ func UnZip(sourceFilePath, tarFilePath string) error {
 	return nil
 }
 
+// 字节压缩（zlib方式压缩）
+// 参数：
+// data：待压缩的数组
+// level：等级
+// 返回值：
+// 1.压缩后的数据
+// 2.错误对象
 func Zip2(data []byte, level int) ([]byte, error) {
 	var buffer bytes.Buffer
-	compressor, err := zlib.NewWriterLevelDict(&buffer, level, nil)
+	zlibWriter, err := zlib.NewWriterLevelDict(&buffer, level, nil)
 	if err != nil {
 		return nil, err
 	}
 
-	compressor.Write(data)
-	compressor.Close()
+	zlibWriter.Write(data)
+	zlibWriter.Close()
+
+	return buffer.Bytes(), nil
+}
+
+// 字节解压（zlib方式压缩）
+// data：待解压的数据
+// 返回值:
+// 1.解压后的数据
+// 2.错误对象
+func UnZip2(data []byte) ([]byte, error) {
+	dataReader := bytes.NewReader(data)
+	zlibReader, err := zlib.NewReader(dataReader)
+	if err != nil {
+		return nil, err
+	}
+	defer zlibReader.Close()
+
+	var buffer bytes.Buffer
+	_, err = io.Copy(&buffer, zlibReader)
+	if err != nil {
+		return nil, err
+	}
 
 	return buffer.Bytes(), nil
 }

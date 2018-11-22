@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bc9d37-e03f-4b14-ac99-2beca40b3c54" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil.go" afterPath="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil.go" />
       <change beforePath="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go" afterPath="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go" />
+      <change beforePath="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go" afterPath="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,32 +16,7 @@
     <SUITE FILE_PATH="coverage/GoUtil$TestReflect_in_fileUtil_test_go.coverage" NAME="TestReflect in fileUtil_test.go Coverage Results" MODIFIED="1542798532729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fileUtil_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-888">
-              <caret line="32" column="67" lean-forward="true" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-              <folding>
-                <element signature="e#18#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zipUtil.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
-              <folding>
-                <element signature="e#18#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,8 +41,8 @@
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil_test.go" />
         <option value="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil.go" />
-        <option value="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go" />
         <option value="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go" />
+        <option value="$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go" />
       </list>
     </option>
   </component>
@@ -109,7 +82,30 @@
             </path>
             <path>
               <item name="GoUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BLL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BLL" type="462c0819:PsiDirectoryNode" />
+              <item name="fileUtil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoUtil" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="GoUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;GoUtil&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -142,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestReflect in fileUtil_test.go">
+  <component name="RunManager" selected="Go Test.TestZip2 in fileUtil_test.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="GoUtil" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -161,6 +157,15 @@
       <package value="moqikaka.com/Test/src/BLL/fileUtil" />
       <pattern value="^TestReflect$" />
     </configuration>
+    <configuration name="TestZip2 in fileUtil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="GoUtil" />
+      <working_directory value="$PROJECT_DIR$/src/BLL/fileUtil" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="moqikaka.com/Test/src/BLL/fileUtil" />
+      <pattern value="^TestZip2$" />
+    </configuration>
     <configuration name="fileUtil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="GoUtil" />
       <working_directory value="$PROJECT_DIR$/src/BLL/fileUtil" />
@@ -170,16 +175,18 @@
       <package value="moqikaka.com/Test" />
       <filePath value="$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Go Test.TestReflect in fileUtil_test.go" />
       <item index="1" class="java.lang.String" itemvalue="Go Test.fileUtil_test.go" />
       <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.TestZip2 in fileUtil_test.go" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Test.TestReflect in fileUtil_test.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Test.fileUtil_test.go" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.TestZip2 in fileUtil_test.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestReflect in fileUtil_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Test.fileUtil_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -187,21 +194,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 45m 58s.xml">
-      <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 50m 51s.xml">
-      <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 51m 39s.xml">
-      <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 52m 26s.xml">
-      <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 53m 39s.xml">
-      <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 14h 54m 14s.xml">
       <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -217,6 +209,21 @@
     <history-entry file="TestReflect_in_fileUtil_test_go - 2018.11.22 at 15h 02m 22s.xml">
       <configuration name="TestReflect in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestZip2_in_fileUtil_test_go - 2018.11.22 at 15h 36m 21s.xml">
+      <configuration name="TestZip2 in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestZip2_in_fileUtil_test_go - 2018.11.22 at 15h 36m 31s.xml">
+      <configuration name="TestZip2 in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestZip2_in_fileUtil_test_go - 2018.11.22 at 15h 37m 44s.xml">
+      <configuration name="TestZip2 in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestZip2_in_fileUtil_test_go - 2018.11.22 at 15h 38m 32s.xml">
+      <configuration name="TestZip2 in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestZip2_in_fileUtil_test_go - 2018.11.22 at 15h 40m 07s.xml">
+      <configuration name="TestZip2 in fileUtil_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -227,7 +234,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031512607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20483193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -259,7 +266,7 @@
         <state relative-caret-position="308">
           <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#18#62#0" expanded="true" />
+            <element signature="e#18#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -313,7 +320,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#18#62#0" expanded="true" />
+            <element signature="e#18#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -333,7 +340,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#18#62#0" expanded="true" />
+            <element signature="e#18#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,14 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/io/io.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="364" column="46" lean-forward="true" selection-start-line="364" selection-start-column="46" selection-end-line="364" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/os/stat_unix.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -530,14 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="100" column="21" lean-forward="true" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/compress/zlib/writer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -566,14 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/fileUtil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="191" column="9" lean-forward="true" selection-start-line="188" selection-start-column="8" selection-end-line="191" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../goutil/zlibUtil/doc.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -582,38 +565,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/fileUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="146" column="23" lean-forward="true" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/compress/zlib/writer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="62" column="52" lean-forward="false" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/bytes/reader.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="149" column="32" lean-forward="false" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/compress/zlib/reader.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="84" column="17" lean-forward="true" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="361" column="36" lean-forward="true" selection-start-line="361" selection-start-column="36" selection-end-line="361" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../goutil/zlibUtil/zlib_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../goutil/zlibUtil/zlib.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="322">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
-          <caret line="32" column="67" lean-forward="true" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-          <folding>
-            <element signature="e#18#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/zipUtil.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+        <state relative-caret-position="484">
+          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
           <folding>
             <element signature="e#18#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BLL/fileUtil/fileUtil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding>
+            <element signature="e#18#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
