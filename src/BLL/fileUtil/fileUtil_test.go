@@ -14,18 +14,44 @@ var (
 )
 
 func TestReflect(context *testing.T) {
-	// 设置WaitGroup需要等待的数量，只要有一个服务器出现错误都停止服务器
-	wg.Add(1)
-
-	//curPath, _ := GetCurrentPath()
-	// 获取当前路径
-	//fmt.Println(curPath)
-	tempList, err := GetFileList("E:\\Project\\WorkingDirectory\\GoProject\\src\\moqikaka.com\\Test")
-	if err == nil {
-		fmt.Println(tempList)
-	} else {
+	startTime := time.Now()
+	// zip压缩文件
+	dataList = append(dataList, "E:\\中国.sql")
+	err := Zip(dataList, "E:\\linux.zip")
+	if err != nil {
+		print(err)
+	}
+	// zip解压文件
+	err = UnZip("E:\\linux.zip", "E:\\Temp")
+	if err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println(time.Now().Sub(startTime))
+
+	//fmt.Println("-----------------------------")
+	//startTime = time.Now()
+	//tempList, err := ReadFileByIOUtil("E:\\", "20180828_slg.sql")
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//tempList1, err := Zip2(tempList, zlib.DefaultCompression)
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//WriteFileByByte("E:\\", "temp", tempList1)
+
+	//// 设置WaitGroup需要等待的数量，只要有一个服务器出现错误都停止服务器
+	//wg.Add(1)
+	//
+	////curPath, _ := GetCurrentPath()
+	//// 获取当前路径
+	////fmt.Println(curPath)
+	//tempList, err := GetFileList("E:\\Project\\WorkingDirectory\\GoProject\\src\\moqikaka.com\\Test")
+	//if err == nil {
+	//	fmt.Println(tempList)
+	//} else {
+	//	fmt.Println(err)
+	//}
 
 	//go ReadFileByIOUtil("D:\\", "20180828_slg.sql")
 	//tempList, err := ReadFileByIOUtil("D:\\", "20180828_slg.sql")
@@ -48,7 +74,7 @@ func TestReflect(context *testing.T) {
 
 	//s := string(tempList)
 	//fmt.Println(s)
-	go run()
+	//go run()
 	//go run()
 	//go run()
 	//for i := 0; i < 100000000; i++ {
@@ -57,7 +83,7 @@ func TestReflect(context *testing.T) {
 	//	mutexs.Unlock()
 	//}
 
-	wg.Wait()
+	//wg.Wait()
 }
 
 func run() {

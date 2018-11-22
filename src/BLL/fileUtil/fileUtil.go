@@ -214,3 +214,38 @@ func WriteFile(filePath, fileName string, content []string) error {
 
 	return nil
 }
+
+// 写文件
+// 参数：
+// filePath：文件夹路径
+// fileName：文件名字
+// content：类容字符串
+// 返回值：
+// 1.错误对象
+func WriteFileByByte(filePath, fileName string, content []byte) error {
+	fileName = filepath.Join(filePath, fileName)
+
+	// 如果文件夹不存在就创建文件夹先
+	mutex.Lock()
+	if !DirExists(filePath) {
+		err := os.MkdirAll(filePath, os.ModePerm|os.ModeTemporary)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+
+	os, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND|os.O_CREATE, os.ModePerm|os.ModeTemporary)
+	if err != nil {
+		fmt.Println(fmt.Printf("报错了%s", err))
+		return err
+	}
+
+	defer func() {
+		os.Close()
+		mutex.Unlock()
+	}()
+
+	os.Write(content)
+
+	return nil
+}
