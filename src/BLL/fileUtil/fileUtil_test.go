@@ -1,7 +1,6 @@
 package fileUtil
 
 import (
-	"compress/zlib"
 	"fmt"
 	"sync"
 	"testing"
@@ -44,36 +43,6 @@ func TestReadOrWrite(t *testing.T) {
 	}
 
 	ReadFileByBufferIO("D:\\", "20180828_slg.sql")
-}
-
-func TestZip(t *testing.T) {
-	startTime := time.Now()
-	// zip压缩文件
-	dataList = append(dataList, "E:\\中国.sql")
-	err := Zip(dataList, "E:\\linux.zip")
-	if err != nil {
-		print(err)
-	}
-	// zip解压文件
-	err = UnZip("E:\\linux.zip", "E:\\Temp")
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(time.Now().Sub(startTime))
-}
-
-func TestZip2(context *testing.T) {
-	data := ([]byte)(InitString)
-	result, _ := Zip2(data, zlib.DefaultCompression)
-	ZlibBytes = result
-
-	data, _ = UnZip2(ZlibBytes)
-	result2 := string(data)
-	if result2 != InitString {
-		fmt.Println(fmt.Printf("解压缩失败，源数据%s，实际%s", InitString, result2))
-	}
-
-	fmt.Print(result2)
 }
 
 func run() {
